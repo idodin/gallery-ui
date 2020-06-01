@@ -1,10 +1,10 @@
 <template>
   <v-card hover tile router :to="'/images/' + data._id" class="py-3 px-5 mx-2">
     <v-row>
-      <v-col cols="12" class="title">{{ data.title }}</v-col>
+      <v-col cols="12" class="title">{{ data.title }} <span style="color: red" v-if="!data.isPublic">(Private)</span> </v-col>
     </v-row>
     <v-row>
-      <img :src="data.link" />
+      <img :alt="data.description" :src="data.link" />
     </v-row>
     <v-row>
       <v-col cols="12" class="subtext grey--text text-truncate">{{

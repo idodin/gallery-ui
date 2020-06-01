@@ -98,7 +98,7 @@
 
 <script>
 import Image from "@/components/Images/Index/Image";
-import { eventBus } from "vue";
+import { eventBus } from "@/store/eventBus";
 
 export default {
   name: "Overview",

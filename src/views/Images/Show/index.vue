@@ -14,7 +14,7 @@
         <v-row>
           <v-col align="center" cols="12" sm="12">
             <h1 class="my-5 display-1 font-weight-light">
-              <b>Title:</b> {{ image.title }}
+              <b>Title:</b> {{ image.title }} <span style="color: red" v-if="!image.isPublic">(Private)</span>
             </h1>
             <h2 class="my-5  font-weight-light">
               <b>Description:</b> {{ image.description }} <br />

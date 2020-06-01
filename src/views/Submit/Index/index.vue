@@ -146,8 +146,4 @@ a {
   text-decoration: none;
   font-weight: bold;
 }
-
-.social-link-icons {
-  padding: 0px 15px;
-}
 </style>
